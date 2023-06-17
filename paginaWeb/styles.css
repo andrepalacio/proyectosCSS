@@ -1,0 +1,182 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* MATEERIAL ICONS */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* nav bar style */
+
+nav{
+    background-color: #1C2833;
+    color: white;
+    width: 100%;
+}
+nav .mobile{
+    display: none;
+}
+nav .logo{
+    min-width: 50px;
+    padding: 10px 20px;
+}
+
+nav .logo img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav #store-name p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+}
+nav a:hover{
+    color: black;
+    background-color: greenyellow;
+}
+nav .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+nav .desktop .primary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .desktop .secondary{
+    display: none;
+}
+/* nav .desktop .primary, nav .desktop .secondary-full{
+    display: flex;
+}
+
+nav .desktop .primary, nav .desktop .secondary-mini{
+    display: none;
+} */
+
+/* Articles style */
+
+.art-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 10px;
+    margin: 50px auto 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.article {
+    box-sizing: border-box;
+    border: #ccc solid 1px;
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+    margin: 20px;
+}
+
+.art-section .art-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: #ccc solid 1px;
+}
+
+.art-section .art-info {
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.art-section .art-info button {
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    background-color: rgb(0, 136, 226);
+    padding: 8px 5px;
+    color: white;
+}
+
+.art-section .art-info button:hover {
+    background-color: rgb(0, 103, 172);
+}
+
+@media screen and (max-width: 500px){
+    nav .desktop, .desktop .primary {
+        display: none;
+    }
+    nav .mobile{
+        display: block;
+        width: 100%;
+    }
+    nav .mobile .links {
+        display: none;
+    }
+    nav .mobile .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    nav .mobile .header button{
+        background-color: #1C2833;
+        color: white;
+        border: none;
+        margin-right: 50px;
+    }
+    .art-section {
+        width: 95%;
+        padding: 0;
+    }
+
+    .article{
+        margin: 10px 0 20px 0;
+    }
+}
