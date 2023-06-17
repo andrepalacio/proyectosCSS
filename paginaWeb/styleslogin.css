@@ -106,15 +106,15 @@ nav .desktop .secondary{
 /* form styles */
 
 .formularios .contenedorFomulario{
-    width: 500px;
+    width: 70%;
     margin: 0 auto;
 }
 .formularios{
     background-color: #1C2833;
     outline: solid 3px #fff;
-     width: 50%;
+     width: 40%;
      overflow: hidden;
-     height: 50%;
+     height: 60%;
      display: flex;
      align-items: center;
     border-radius: 10px;
@@ -161,6 +161,11 @@ nav .desktop .secondary{
     outline: solid 2px #3644df;
 }
 
+.formularios .contenedorFomulario form a{
+    color: white;
+    text-decoration: none;
+}
+
 footer {
     background-color: #1C2833;
     padding: 5px 0;
@@ -170,13 +175,7 @@ footer p{
     color: white;
 }
 
-@media screen and (max-width: 1060px){
-    .formularios .contenedorFomulario{
-        width: 350px;
-        margin: 0 auto;
-    }
-}
-@media screen and (max-width: 740px){
+@media screen and (max-width: 890px){
     .formularios .contenedorFomulario h2{
         text-align: center;
         font-size: 2rem;
@@ -225,5 +224,20 @@ footer p{
     nav .mobile .header button:hover{
         display: block;
         position: absolute;
+    }
+
+    .formularios .contenedorFomulario h2{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff
+    }
+
+    .formularios{
+        width: 70%;
+    }
+
+    .formularios .contenedorFomulario{
+        width: 90%;
+        margin: 0 auto;
     }
 }
