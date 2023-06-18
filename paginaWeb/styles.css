@@ -93,13 +93,6 @@ nav .desktop .primary {
 nav .desktop .secondary{
     display: none;
 }
-/* nav .desktop .primary, nav .desktop .secondary-full{
-    display: flex;
-}
-
-nav .desktop .primary, nav .desktop .secondary-mini{
-    display: none;
-} */
 
 /* Articles style */
 
@@ -154,6 +147,12 @@ footer {
 footer p{
     text-align: center;
     color: white;
+}
+
+@media screen and (max-height: 720px) {
+    .art-section {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 500px){
